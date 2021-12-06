@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SL Educar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./assets/css/base/base.css">
+    <link rel="stylesheet" href="./assets/css/cadastro.css">
+    <link rel="stylesheet" href="./assets/css/componentes/cartao.css">
+    <link rel="stylesheet" href="./assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="./assets/css/componentes/botao.css">
+    <link rel="stylesheet" href="./node_modules/flipdown/src/flipdown.css">
+    <script type="text/javascript" src="/node_modules/flipdown/src/flipdown.js"></script>
+</head>
+<body>
+    <main class="container flex flex--coluna flex--centro">
+        <div class="cadastro-cabecalho">
+            <img src="./assets/img/doguito.svg" alt="Logo Doguito" class="cadastro-cabecalho__logo">
+            <h1 class="cadastro-cabecalho__titulo">Stephane H. B. Lima</h1>
+        </div>
+
+        <section class="videoSobre">
+			<div class="container">
+				<iframe class="videoSobre-video" width="600" height="400" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</section>
+
+        <div>
+            <h1 class="cadastro-flipdown__titulo">Video disponível por tempo limitado!</h1>
+            <p class="cadastro-flipdown__texto">Aproveite enquanto o vídeo não é retirado!</p>
+            <div id="flipdown" class="flipdown cadastro-flipdown"></div>
+        </div>
+
+        <section class="cartao">
+            <h2 class="cartao__titulo">Complete seu cadastro</h2>
+            <form action="./cadastro_concluido.html" class="formulario flex flex--coluna">
+                <fieldset>
+                    <legend class="formulario__legenda">Informações básicas</legend>
+                    <div class="input-container">
+                        <input name="nome" id="nome" class="input" type="text" placeholder="Nome" data-tipo="nome" required>
+                        <label class="input-label" for="nome">Nome</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="email" id="email" class="input" type="email" placeholder="Email" data-tipo="email" required>
+                        <label class="input-label" for="email">Email</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                </fieldset> 
+                <fieldset>
+                    <legend class="formulario__legenda">Escolha seu grau de escolaridade</legend>
+                    <div class="input-div-select">
+                        <select>
+                            <option >Graduação incompleta</option>
+                            <option selected>Graduação completa</option>
+                            <option >Mestrado completo</option>
+                            <option >Doutorado completo</option>
+                        </select>
+                    </div>                    
+                </fieldset>
+                <button class="botao" data-botao>Receber material</a>
+            </form>
+        </section>
+    </main>
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
