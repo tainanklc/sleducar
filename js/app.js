@@ -1,6 +1,6 @@
 import { valida } from './validacao.js'
 import {enviaEmail} from './envioEmail.js'
-// import { FlipDown } from './node_modules/flipdown/src/flipdown.js'
+// import from './node_modules/flipdown/src/flipdown.js'
 
 
 document.addEventListener('DOMContentLoaded', () => {
