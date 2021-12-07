@@ -31,7 +31,7 @@
 
     margin-bottom: 1rem;
 
-    background-image: url(../img/checkmark.svg);
+    /* background-image: url(../img/checkmark.svg); */
     background-size: cover;
     background-repeat: no-repeat;
 }

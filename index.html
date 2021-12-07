@@ -13,16 +13,18 @@
     <link rel="stylesheet" href="./assets/css/componentes/botao.css">
     <link rel="stylesheet" href="./node_modules/flipdown/src/flipdown.css">
     <script type="text/javascript" src="./node_modules/flipdown/src/flipdown.js"></script>
-    <script type="text/javascript" src="./node_modules/flipdown/example/js/flipdown/flipdown.js"></script>
-    <script type="text/javascript" src="./node_modules/flipdown/example/js/main.js"></script>
 </head>
 <body>
     <main class="container flex flex--coluna flex--centro">
         <div class="cadastro-cabecalho">
-            <img src="./assets/img/doguito.svg" alt="Logo Doguito" class="cadastro-cabecalho__logo">
-            <h1 class="cadastro-cabecalho__titulo">Stephane H. B. Lima</h1>
+            <img src="./assets/img/logo-sl.jpg" alt="Logo SL Educar" class="cadastro-cabecalho__logo">
         </div>
 
+        <div class="cartao">
+            <h2 class="cartao__titulo">DELIMITE SEUS OBJETIVO DE PESQUISA COMIGO!</h2>
+            <p>CLIQUE E ASSISTA À AULA GRATUITAMENTE ABAIXO E DESCUBRA COMO ESCOLHER UM PROBLEMA DE PESQUISA QUE FAÇA SENTIDO PARA A SUA TRAJETÓRIA PROFISSIONAL</p>
+        </div>
+        
         <section class="videoSobre">
 			<div class="container">
 				<iframe class="videoSobre-video" width="600" height="400" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
@@ -30,16 +32,17 @@
 		</section>
 
         <div>
-            <h1 class="cadastro-flipdown__titulo">Video disponível por tempo limitado!</h1>
-            <p class="cadastro-flipdown__texto">Aproveite enquanto o vídeo não é retirado!</p>
+            <h1 class="cadastro-flipdown__titulo">FAÇA SUA PESQUISA TER SENTIDO NA SUA VIDA</h1>
+            <h1 class="cadastro-flipdown__titulo">DISPONÍVEL POR TEMPO LIMITADO*</h1>
             <div id="flipdown" class="flipdown cadastro-flipdown"></div>
+            <p class="cadastro-flipdown__texto">*Após esse período, a aula será disponível apenas exclusivamente aos meus mentorandos.</p>
         </div>
 
         <section class="cartao">
-            <h2 class="cartao__titulo">Complete seu cadastro</h2>
+            <h2 class="cartao__titulo">Para receber o material complementar da aula, inscreva-se:</h2>
             <form action="./cadastro_concluido.html" class="formulario flex flex--coluna">
                 <fieldset>
-                    <legend class="formulario__legenda">Informações básicas</legend>
+                    <legend class="formulario__legenda">Informações pessoais:</legend>
                     <div class="input-container">
                         <input name="nome" id="nome" class="input" type="text" placeholder="Nome" data-tipo="nome" required>
                         <label class="input-label" for="nome">Nome</label>
@@ -50,21 +53,36 @@
                         <label class="input-label" for="email">Email</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
+                    <div class="input-container">
+                        <input name="email" id="email" class="input" type="text" placeholder="Cidade" data-tipo="nome" required>
+                        <label class="input-label" for="nome">Cidade</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
                 </fieldset> 
                 <fieldset>
-                    <legend class="formulario__legenda">Escolha seu grau de escolaridade</legend>
+                    <legend class="formulario__legenda">Última Titulação Acadêmica:</legend>
                     <div class="input-div-select">
                         <select>
-                            <option >Graduação incompleta</option>
-                            <option selected>Graduação completa</option>
-                            <option >Mestrado completo</option>
-                            <option >Doutorado completo</option>
+                            <option >Ensino médio</option>
+                            <option selected>Graduação</option>
+                            <option >Mestrado</option>
+                            <option >Doutorado</option>
                         </select>
                     </div>                    
                 </fieldset>
                 <button class="botao" data-botao>Receber material</a>
             </form>
         </section>
+
+        <div>
+            <h2>Quem é Stephane Hilda Barbosa Lima?</h2>
+            <p>Professora universitária de Direitos Fundamentais na UNDB, doutoranda em Direito do Estado na Universidade de São Paulo (USP), ex-pesquisadora da FGV Direito São Paulo (CEPI), advogada e mentora acadêmica.</p>
+
+            <p>Conheça meu trabalho:</p>
+            <p>Instagram: <a href="https://www.instagram.com/stephanelimab/">@stephanelimab</a></p>
+            <p>Publicações: <a href="https://linktree.com.br/new/stephanelimab">https://linktree.com.br/new/stephanelimab</a></p>
+        </div>
+
     </main>
     <script src="./js/app.js" type="module"></script>
 </body>
