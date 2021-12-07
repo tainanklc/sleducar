@@ -50,6 +50,7 @@ novaTarefa.addEventListener('click', enviaEmail('Cliquei!!!!'))
 
 // function criarPopup(){
 //     newWindow = window.open ('', 'pagina');
+// window.open("cadastro_concluido.html", "", "top=40, left=40, width=250, height=100" );
 //     newWindow.document.write ("Este é um novo popup <br/> <img src='imagem.jpg' width='100' height='100'>");
 // }
 
