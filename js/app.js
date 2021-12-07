@@ -1,4 +1,5 @@
 import { valida } from './validacao.js'
+// import { FlipDown } from './node_modules/flipdown/src/flipdown.js'
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -39,10 +40,10 @@ inputs.forEach(input => {
     })
 })
 
-function criarPopup(){
-    newWindow = window.open ('', 'pagina');
-    newWindow.document.write ("Este é um novo popup <br/> <img src='imagem.jpg' width='100' height='100'>");
-}
+// function criarPopup(){
+//     newWindow = window.open ('', 'pagina');
+//     newWindow.document.write ("Este é um novo popup <br/> <img src='imagem.jpg' width='100' height='100'>");
+// }
 
-const novaTarefa = document.querySelector('[data-botao]')
-novaTarefa.addEventListener('click',criarPopup())
+// const novaTarefa = document.querySelector('[data-botao]')
+// novaTarefa.addEventListener('click',criarPopup())
