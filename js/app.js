@@ -3,8 +3,6 @@ import {enviaEmail} from './envioEmail.js'
 // import from './node_modules/flipdown/src/flipdown.js'
 // import * as FlipDown from '../node_modules/flipdown/dist/flipdown.js'
 
-console.log(FlipDown)
-
 document.addEventListener('DOMContentLoaded', () => {
 
     // Unix timestamp (in seconds) to count down to
