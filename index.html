@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="./assets/css/componentes/cartao.css">
     <link rel="stylesheet" href="./assets/css/componentes/inputs.css">
     <link rel="stylesheet" href="./assets/css/componentes/botao.css">
-    <link rel="stylesheet" href="./node_modules/flipdown/src/flipdown.css">
-    <script type="text/javascript" src="./node_modules/flipdown/src/flipdown.js"></script>
+    <link rel="stylesheet" href="./assets/css/componentes/pessoa-imagem.css">
+    <link rel="stylesheet" href="/node_modules/flipdown/src/flipdown.css">
+    <script type="text/javascript" src="/node_modules/flipdown/src/flipdown.js"></script>
 </head>
 <body>
     <main class="container flex flex--coluna flex--centro">
@@ -20,7 +21,7 @@
             <img src="./assets/img/logo-sl.jpg" alt="Logo SL Educar" class="cadastro-cabecalho__logo">
         </div>
 
-        <div class="cartao">
+        <div class="cartao flex--centro">
             <h2 class="cartao__titulo">DELIMITE SEUS OBJETIVO DE PESQUISA COMIGO!</h2>
             <p>CLIQUE E ASSISTA À AULA GRATUITAMENTE ABAIXO E DESCUBRA COMO ESCOLHER UM PROBLEMA DE PESQUISA QUE FAÇA SENTIDO PARA A SUA TRAJETÓRIA PROFISSIONAL</p>
         </div>
@@ -31,7 +32,7 @@
 			</div>
 		</section>
 
-        <div>
+        <div class="cartao">
             <h1 class="cadastro-flipdown__titulo">FAÇA SUA PESQUISA TER SENTIDO NA SUA VIDA</h1>
             <h1 class="cadastro-flipdown__titulo">DISPONÍVEL POR TEMPO LIMITADO*</h1>
             <div id="flipdown" class="flipdown cadastro-flipdown"></div>
@@ -70,13 +71,20 @@
                         </select>
                     </div>                    
                 </fieldset>
-                <button class="botao" data-botao>Receber material</a>
+                <label>
+                    <input type="checkbox" name="" class="formulario__legenda" checked> Gostaria de receber notícias por email?
+                </label>
+                <button class="botao" id="enviarEmail">Receber material</a></button>
             </form>
+            <p>*Se não receber o material, verifique sua caixa de SPAM.</p>
         </section>
 
-        <div>
-            <h2>Quem é Stephane Hilda Barbosa Lima?</h2>
-            <p>Professora universitária de Direitos Fundamentais na UNDB, doutoranda em Direito do Estado na Universidade de São Paulo (USP), ex-pesquisadora da FGV Direito São Paulo (CEPI), advogada e mentora acadêmica.</p>
+        <div class="cartao">
+            <h2 class="quemSomos">Quem é Stephane Hilda Barbosa Lima?</h2>
+            <div class="quemSomos">
+                <div class="pessoa__imagem pessoa__imagem--stephane"></div>
+                <p>Professora universitária de Direitos Fundamentais na UNDB, doutoranda em Direito do Estado na Universidade de São Paulo (USP), ex-pesquisadora da FGV Direito São Paulo (CEPI), advogada e mentora acadêmica.</p>
+            </div>
 
             <p>Conheça meu trabalho:</p>
             <p>Instagram: <a href="https://www.instagram.com/stephanelimab/">@stephanelimab</a></p>
@@ -85,5 +93,6 @@
 
     </main>
     <script src="./js/app.js" type="module"></script>
+    <!-- <script src="./node_modules/nodemailer/lib/nodemailer.js" type="module"></script> -->
 </body>
 </html>

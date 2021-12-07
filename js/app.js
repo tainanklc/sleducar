@@ -1,4 +1,5 @@
 import { valida } from './validacao.js'
+import {enviaEmail} from './envioEmail.js'
 // import { FlipDown } from './node_modules/flipdown/src/flipdown.js'
 
 
@@ -39,6 +40,13 @@ inputs.forEach(input => {
         valida(evento.target)
     })
 })
+
+
+const novaTarefa = document.getElementById("enviarEmail")
+
+novaTarefa.addEventListener('click', enviaEmail('Cliquei!!!!'))
+
+// document.getElementById("enviarEmail").onclick = enviaEmail("CLIQUEI")
 
 // function criarPopup(){
 //     newWindow = window.open ('', 'pagina');
