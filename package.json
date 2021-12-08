@@ -1,6 +1,1 @@
-{
-  "dependencies": {
-    "flipdown": "^0.3.2",
-    "nodemailer": "^6.7.2"
-  }
-}
+{}
