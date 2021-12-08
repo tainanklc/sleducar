@@ -18,3 +18,14 @@
     justify-content: space-around;
     padding-top: 3rem;
 }
+
+
+
+
+@media(max-width: 500px) {
+.pessoa__imagem--stephane {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+}
