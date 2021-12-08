@@ -1,4 +1,5 @@
 .botao {
+    cursor: pointer;
     display: block;
     background-color: var(--cor-primaria);
     border-radius: 7px;

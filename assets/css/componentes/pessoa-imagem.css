@@ -10,6 +10,7 @@
 
 .pessoa__imagem--stephane {
     background-image: url('/assets/img/pessoa-stephane.png');
+    margin-bottom: 2rem;
 }
 
 .quemSomos {
@@ -26,6 +27,7 @@
 .pessoa__imagem--stephane {
     max-height: 200px;
     max-width: 200px;
+    margin-bottom: 2rem;
 }
 
 }

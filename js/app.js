@@ -1,5 +1,4 @@
 import { valida } from './validacao.js'
-import {enviaEmail} from './envioEmail.js'
 // import from './node_modules/flipdown/src/flipdown.js'
 // import * as FlipDown from '../node_modules/flipdown/dist/flipdown.js'
 
@@ -20,6 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
       .ifEnded(() => {
         console.log('The countdown has ended!');
       });
+
+
+      const novaTarefa = document.getElementById("enviarEmail")
+      console.log(novaTarefa);
 });
 
 const inputs = document.querySelectorAll('input')
@@ -42,9 +45,7 @@ inputs.forEach(input => {
 })
 
 
-const novaTarefa = document.getElementById("enviarEmail")
 
-novaTarefa.addEventListener('click', enviaEmail('Cliquei!!!!'))
 
 // document.getElementById("enviarEmail").onclick = enviaEmail("CLIQUEI")
 
@@ -56,3 +57,42 @@ novaTarefa.addEventListener('click', enviaEmail('Cliquei!!!!'))
 
 // const novaTarefa = document.querySelector('[data-botao]')
 // novaTarefa.addEventListener('click',criarPopup())
+
+
+(function () {
+    if (document.getElementsByTagName('form').length > 0) {
+        document.getElementsByTagName('form')[0].addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Check for spam
+            if(document.getElementById('js-validate-robot').value !== '') { return false }
+
+            // Get url for mailchimp
+            var url = this.action.replace('/post?', '/post-json?');
+
+            // Add form data to object
+            var data = '';
+            var inputs = this.querySelectorAll('#js-form-inputs input');
+            for (var i = 0; i < inputs.length; i++) {
+                data += '&' + inputs[i].name + '=' + encodeURIComponent(inputs[i].value);
+            }
+
+            // Create & add post script to the DOM
+            var script = document.createElement('script');
+            script.src = url + data;
+            document.body.appendChild(script);
+
+            // Callback function
+            var callback = 'callback';
+            window[callback] = function(data) {
+
+                // Remove post script from the DOM
+                delete window[callback];
+                document.body.removeChild(script);
+
+                // Display response message
+                document.getElementById('js-subscribe-response').innerHTML = data.msg
+            };
+        });
+    }
+})();
