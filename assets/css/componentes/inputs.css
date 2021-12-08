@@ -24,6 +24,7 @@
 }
 
 .input-div-select select {
+    max-width: 70%;
     width: 270px;
     /* Tamanho do select, maior que o tamanho da div "div-select" */
     height: 48px;
