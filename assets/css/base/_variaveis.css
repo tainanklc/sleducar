@@ -1,5 +1,7 @@
 :root {
-    --fonte-familia-corpo: 'Montserrat', sans-serif;
+    --fonte-familia-titulo: 'Ruda', sans-serif;
+    --fonte-familia-corpo: 'Belleza', sans-serif;
+    --fonte-familia-detalhes:'Rosario', sans-serif;
     --fonte-familia-logo: 'Pacifico', cursive;
 
     --fonte-peso-input: 300;

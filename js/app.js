@@ -1,5 +1,5 @@
 import { valida } from './validacao.js'
-import {EnviaEmail} from './envioEmail.js'
+import {montaEmail, abreJanela} from './envioEmail.js'
 // import from './node_modules/flipdown/src/flipdown.js'
 // import * as FlipDown from '../node_modules/flipdown/dist/flipdown.js'
 
@@ -41,11 +41,12 @@ inputs.forEach(input => {
     })
 })
 
-
-
 const novaTarefa = document.getElementById("enviarEmail")
 
-novaTarefa.addEventListener('click', EnviaEmail)
+novaTarefa.addEventListener('click', montaEmail)
+// [montaEmail, abreJanela('http://www.xtf.dk', 'xtf', 900, 500)])
+
+
 
 // document.getElementById("enviarEmail").onclick = enviaEmail("CLIQUEI")
 

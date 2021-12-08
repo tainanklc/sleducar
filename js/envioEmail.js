@@ -1,17 +1,19 @@
 // import '../node_modules/nodemailer'
 
-export const EnviaEmail = () => {
+//  const EnviaEmail = () => {
   
-    const botaoConclui = document.getElementById('enviarEmail')
+//     const botaoConclui = document.getElementById('enviarEmail')
     
-    // botaoConclui.classList.add('check-button')
-    // botaoConclui.innerText = 'concluir'
+//     // botaoConclui.classList.add('check-button')
+//     // botaoConclui.innerText = 'concluir'
 
-    botaoConclui.addEventListener('click', montaEmail)
-}
+//     botaoConclui.addEventListener('click', montaEmail)
+// }
 
-const montaEmail = (evento) => {
-    const nodemailer = require('nodemailer');
+export const montaEmail = (evento) => {
+    console.log('Entrou no montaEmail');
+    const nodemailer = require(['nodemailer']);
+    console.log(nodemailer);
 
     let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
@@ -37,3 +39,9 @@ const montaEmail = (evento) => {
         console.log(err);
     })
 }
+
+export function abreJanela(url, title, w, h) {
+    var left = (screen.width/2)-(w/2);
+    var top = (screen.height/2)-(h/2);
+    return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+} 
