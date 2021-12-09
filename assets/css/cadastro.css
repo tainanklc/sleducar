@@ -4,6 +4,8 @@
     align-items: center;
 
     padding-top: 1rem;
+    background: #f9f9f9;
+    justify-content: space-between;
 }
 
 .cadastro-cabecalho__logo {
@@ -12,12 +14,21 @@
 }
 
 .cadastro-rodape__logo {
-    width: 150px;
-    margin-top: 2rem;
+    width: 250px;
 }
 
 .cadastro-rodape {
     text-align: center;
+    background: #f9f9f9;
+    padding: 1rem;
+}
+
+.cadastro-rodape__dadosEmpresa{
+    margin-top: 0.5rem;
+}
+
+.cadastro-topo{
+    margin-top:3rem;
 }
 
 .cadastro-cabecalho__titulo {
@@ -44,7 +55,7 @@
 
 @media(min-width: 800px) {
     .cadastro-cabecalho__logo {
-        width: 400px;
+        width: 350px;
         margin-bottom: 1rem;
     }
 

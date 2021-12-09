@@ -33,6 +33,7 @@
 
 .cartao__subtitulo {
     line-height: 1.5;
+    text-transform: uppercase;
 }
 
 @media(min-width: 800px) {
