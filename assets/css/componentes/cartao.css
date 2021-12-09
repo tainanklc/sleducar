@@ -9,11 +9,31 @@
     margin-bottom: 1rem;
 }
 
-.cartao__titulo {
-    font-size: var(--fonte-tamanho-cartao-titulo);
+.cartao-vazio {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 45rem;
+    padding: 1rem;
+    box-sizing: border-box;
     margin-bottom: 1rem;
+    color: var(--cor-contraste-claro);
+    text-align: center;
 }
 
+.cartao__titulo {
+    font-size: var(--fonte-tamanho-cartao-titulo);
+    margin-bottom: 2rem;
+    /* font-family: var(--fonte-familia-titulo); */
+}
+
+.cartao__titulo-botao{
+    font-size: 28px;
+    margin-bottom: 1rem;   
+}
+
+.cartao__subtitulo {
+    line-height: 1.5;
+}
 
 @media(min-width: 800px) {
     .cartao {

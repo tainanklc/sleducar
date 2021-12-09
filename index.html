@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SL Educar</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Rosario:ital@1&family=Ruda:wght@700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./assets/css/base/base.css">
     <link rel="stylesheet" href="./assets/css/cadastro.css">
@@ -13,10 +14,6 @@
     <link rel="stylesheet" href="./assets/css/componentes/pessoa-imagem.css">
     <link rel="stylesheet" href="./assets/css/flipdown.css">
     <script type="text/javascript" src="/js/flipdown.js"></script>
-    <!-- <link rel="stylesheet" href="./node_modules/flipdown/dist/flipdown.css">
-    <script type="text/javascript" src="/node_modules/flipdown/dist/flipdown.js"></script> -->
-    <!-- <link rel="stylesheet" href="/node_modules/flipdown/src/flipdown.css">
-    <script type="text/javascript" src="/node_modules/flipdown/src/flipdown.js"></script> -->
 </head>
 <body>
     <header>
@@ -27,10 +24,13 @@
         </section>        
     </header>
     <main class="container flex flex--coluna flex--centro">
-        <div class="cartao flex--centro">
-            <h2 class="cartao__titulo">DELIMITE SEUS OBJETIVO DE PESQUISA COMIGO!</h2>
-            <p>CLIQUE E ASSISTA À AULA GRATUITAMENTE ABAIXO E DESCUBRA COMO ESCOLHER UM PROBLEMA DE PESQUISA QUE FAÇA SENTIDO PARA A SUA TRAJETÓRIA PROFISSIONAL</p>
-        </div>
+        <section>
+            <div class="cartao-vazio flex--centro">
+                <h2 class="cartao__titulo">DELIMITE SEUS OBJETIVO DE PESQUISA COMIGO!</h2>
+                <p class="cartao__subtitulo">CLIQUE E ASSISTA À AULA GRATUITAMENTE ABAIXO E DESCUBRA COMO ESCOLHER UM PROBLEMA DE PESQUISA QUE FAÇA SENTIDO PARA A SUA TRAJETÓRIA PROFISSIONAL</p>
+            </div>
+        </section>
+        
         
         <section class="videoSobre">
 			<div class="container container--video">
@@ -38,24 +38,31 @@
 			</div>
 		</section>
 
-        <div class="cartao">
-            
-            <h1 class="cadastro-flipdown__titulo">FAÇA SUA PESQUISA TER SENTIDO NA SUA VIDA</h1>
-            <h1 class="cadastro-flipdown__titulo">DISPONÍVEL POR TEMPO LIMITADO*</h1>
-            <div class="container container--flip">
-                <div id="flipdown" class="flipdown cadastro-flipdown"></div>
-            </div>
-            <p class="cadastro-flipdown__texto">*Após esse período, a aula será disponível apenas exclusivamente aos meus mentorandos.</p>
-            
-        </div>
 
         <section class="cartao">
-            <h2 class="cartao__titulo">Para receber o material complementar da aula, inscreva-se:</h2>
+            <h2 class="cartao__titulo-botao">Para receber o material complementar da aula, inscreva-se:</h2>
             <div style="display: flex;    justify-content: center;">
                 <a href="https://us20.list-manage.com/contact-form?u=c473ddfdfc377a9c051740fad&form_id=a81f3baee1ce98d1d0a88312c1ae4ad8" target="_blank" class="botao" id="enviarEmail2">Receber material</a>
             </div>
             <p>*Se não receber o material, verifique sua caixa de SPAM.</p>
         </section>
+
+
+        <section>
+            <div class="cartao-vazio">
+                <h1 class="cartao__titulo">DISPONÍVEL POR TEMPO LIMITADO*</h1>
+                <div class="container container--flip">
+                    <div id="flipdown" class="flipdown cadastro-flipdown"></div>
+                </div>
+                <p class="cadastro-flipdown__texto">*Após esse período, a aula será disponível apenas exclusivamente aos meus mentorandos.</p>
+            </div>
+        </section>
+
+        <!-- <section>
+            <div class="cartao-vazio flex--centro">
+                <h1 class="cartao__titulo ">FAÇA SUA PESQUISA TER SENTIDO NA SUA VIDA</h1>
+            </div>
+        </section> -->
 
         <!-- <section class="cartao">
             <h2 class="cartao__titulo">Para receber o material complementar da aula, inscreva-se:</h2>
@@ -96,24 +103,27 @@
             </form>
             <p>*Se não receber o material, verifique sua caixa de SPAM.</p>
         </section> -->
-
-        <div class="cartao">
-            <h2 class="quemSomos">Quem é Stephane Hilda Barbosa Lima?</h2>
-            <div class="quemSomos">
-                <div class="pessoa__imagem pessoa__imagem--stephane"></div>
-                <p>Professora universitária de Direitos Fundamentais na UNDB, doutoranda em Direito do Estado na Universidade de São Paulo (USP), ex-pesquisadora da FGV Direito São Paulo (CEPI), advogada e mentora acadêmica.</p>
+        <section>
+            <div class="cartao">
+                <h2 class="quemSomos__titulo">Olá, sou Stephane Hilda Barbosa Lima</h2>
+                <div class="quemSomos">
+                    <div class="pessoa__imagem pessoa__imagem--stephane"></div>
+                    <p class="quemsSomos__descricao">Professora universitária de Direitos Fundamentais na UNDB, doutoranda em Direito do Estado na Universidade de São Paulo (USP), ex-pesquisadora da FGV Direito São Paulo (CEPI), advogada e mentora acadêmica.</p>
+                </div>
+                <div class="quemSomos__contato">
+                    <p>Conheça meu trabalho:</p>
+                    <p>Instagram: <a href="https://www.instagram.com/stephanelimab/">@stephanelimab</a></p>
+                    <p>Publicações: <a href="https://linktree.com.br/new/stephanelimab">https://linktree.com.br/new/stephanelimab</a></p>
+                </div>
             </div>
-
-            <p>Conheça meu trabalho:</p>
-            <p>Instagram: <a href="https://www.instagram.com/stephanelimab/">@stephanelimab</a></p>
-            <p>Publicações: <a style="font-size: 12px;" href="https://linktree.com.br/new/stephanelimab">https://linktree.com.br/new/stephanelimab</a></p>
-        </div>
+        </section>
+        
 
     </main>
     <footer>
-        <section>
+        <section class="cadastro-rodape">
             <div>
-                <img src="./assets/img/logo-sl.png" alt="Logo SL Educar" class="cadastro-cabecalho__logo">
+                <img src="./assets/img/logo-sl.png" alt="Logo SL Educar" class="cadastro-rodape__logo">
             </div>
             <div>
                 <p>© 2022 – SL Educar - Educação e Direito Digital</p>
@@ -122,6 +132,5 @@
         </section>
     </footer>
     <script src="./js/app.js" type="module"></script>
-    <!-- <script src="./node_modules/nodemailer/lib/nodemailer.js" type="module"></script> -->
 </body>
 </html>

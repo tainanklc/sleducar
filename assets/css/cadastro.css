@@ -11,6 +11,15 @@
     margin-bottom: 0.5rem;
 }
 
+.cadastro-rodape__logo {
+    width: 150px;
+    margin-top: 2rem;
+}
+
+.cadastro-rodape {
+    text-align: center;
+}
+
 .cadastro-cabecalho__titulo {
     font-family: var(--fonte-familia-logo);
     font-size: var(--fonte-tamanho-logo);
@@ -35,7 +44,7 @@
 
 @media(min-width: 800px) {
     .cadastro-cabecalho__logo {
-        width: 500px;
+        width: 400px;
         margin-bottom: 1rem;
     }
 

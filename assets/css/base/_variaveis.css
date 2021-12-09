@@ -7,7 +7,7 @@
     --fonte-peso-input: 300;
 
     --fonte-tamanho-logo: 28px;
-    --fonte-tamanho-cartao-titulo: 28px;
+    --fonte-tamanho-cartao-titulo: 30px;
     --fonte-tamanho-input-label: 20px;
     --fonte-tamanho-botao: 22px;
     --fonte-tamanho-formulario-fieldset: 22px;
@@ -22,6 +22,7 @@
     --cor-secundaria: #466b74;
     --cor-contraste-escuro: #466b74;
     --cor-contraste-claro: #E5e0ca;
+    --cor-botao: #eb563d;
     --cor-aviso: #df2525;
     --cor-sucesso: #047900;
     --cor-transparencia: #4d4d4d33;
