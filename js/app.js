@@ -5,7 +5,7 @@ import { valida } from './validacao.js'
 document.addEventListener('DOMContentLoaded', () => {
 
     // Unix timestamp (in seconds) to count down to
-    var deadline = (new Date('2021-12-09T20:00:00').getTime() / 1000) + (86400 * 7) + 1;
+    var deadline = (new Date('2021-12-09T21:30:00').getTime() / 1000) + (86400 * 7) + 1;
   
     // Set up FlipDown
     var flipdown = new FlipDown(deadline, {
@@ -21,24 +21,24 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 });
 
-const inputs = document.querySelectorAll('input')
+// const inputs = document.querySelectorAll('input')
 
-inputs.forEach(input => {
-    if(input.dataset.tipo === 'preco') {
-        SimpleMaskMoney.setMask(input, {
-            prefix: 'R$ ',
-            fixed: true,
-            fractionDigits: 2,
-            decimalSeparator: ',',
-            thousandsSeparator: '.',
-            cursor: 'end'
-        })
-    }
+// inputs.forEach(input => {
+//     if(input.dataset.tipo === 'preco') {
+//         SimpleMaskMoney.setMask(input, {
+//             prefix: 'R$ ',
+//             fixed: true,
+//             fractionDigits: 2,
+//             decimalSeparator: ',',
+//             thousandsSeparator: '.',
+//             cursor: 'end'
+//         })
+//     }
 
-    input.addEventListener('blur', (evento) => {
-        valida(evento.target)
-    })
-})
+//     input.addEventListener('blur', (evento) => {
+//         valida(evento.target)
+//     })
+// })
 
 // novaTarefa.addEventListener('click', montaEmail)
 // [montaEmail, abreJanela('http://www.xtf.dk', 'xtf', 900, 500)])

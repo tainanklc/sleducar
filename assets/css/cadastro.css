@@ -37,6 +37,10 @@
     margin-bottom: 1rem;
 }
 
+.cadastro-flipdown{
+    margin: auto;
+}
+
 .cadastro-flipdown__titulo {
     font-size: var(--fonte-tamanho-flipdown-titulo);
     margin-bottom: 1rem;

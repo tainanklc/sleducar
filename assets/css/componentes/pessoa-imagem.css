@@ -33,6 +33,7 @@ font-size: 36px;
 .quemSomos__contato{
     margin-top: 1rem;
     font-size: 18px;
+    line-height: 1.5;
 }
 
 @media(max-width: 500px) {
