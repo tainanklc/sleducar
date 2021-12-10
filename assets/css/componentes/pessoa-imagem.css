@@ -41,6 +41,11 @@ font-size: 36px;
 	color: darkorange;
 }
 
+#linktree:hover {
+    text-decoration: underline;
+	color: darkorange;
+}
+
 @media(max-width: 500px) {
 .pessoa__imagem--stephane {
     max-height: 200px;
