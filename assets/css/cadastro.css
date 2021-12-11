@@ -57,6 +57,11 @@
     margin-bottom: 2rem;
 }
 
+#mc-embedded-subscribe:hover {
+	background: darkorange;
+    cursor: pointer;
+}
+
 @media(min-width: 800px) {
     .cadastro-cabecalho__logo {
         width: 350px;
