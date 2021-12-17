@@ -31,6 +31,12 @@
     margin-bottom: 1rem;   
 }
 
+.cartao__titulo-inscrever{
+    font-size: 28px;
+    margin-bottom: 1rem;  
+    color: var(--cor-botao)
+}
+
 .cartao__subtitulo {
     line-height: 1.5;
     text-transform: uppercase;

@@ -20,11 +20,17 @@ body {
     padding-bottom: 56.25%;
 }
 
+.container--foto {
+	position: relative;
+    width: 80vw;
+    /* height: 0; 
+	padding-bottom: 56.25%; */
+}
+
 .container--flip {
 	padding: 0;
 	margin: auto;
 	text-align: center;
-
 }
 
 .flex {
@@ -51,10 +57,21 @@ body {
     height: 100%;
 }
 
+.foto__principal {
+    width: 100%;
+    height: 100%;	
+}
+
 @media(min-width: 800px) {
   .container {
 		padding-right: 2.5rem;
 		padding-left: 2.5rem;	
+	}
+	.container--foto {
+		max-width: 80vw;
+		/* width: 30vw; */
+		/* height: 0; 
+		padding-bottom: 56.25%; */
 	}
 }
 
@@ -62,6 +79,12 @@ body {
 
 	.container--video {
 		max-width: 40vw;
+	}
+	.container--foto {
+		max-width: 50vw;
+		/* width: 30vw; */
+		/* height: 0; 
+		padding-bottom: 56.25%; */
 	}
 }
 
