@@ -56,40 +56,41 @@ document.addEventListener('DOMContentLoaded', () => {
 // const novaTarefa = document.querySelector('[data-botao]')
 // novaTarefa.addEventListener('click',criarPopup())
 
-(function () {
-    if (document.getElementsByTagName('form').length > 0) {
-        document.getElementsByTagName('form')[0].addEventListener('submit', function (e) {
-            e.preventDefault();
 
-            // Check for spam
-            if(document.getElementById('js-validate-robot').value !== '') { return false }
+// (function () {
+//     if (document.getElementsByTagName('form').length > 0) {
+//         document.getElementsByTagName('form')[0].addEventListener('submit', function (e) {
+//             e.preventDefault();
 
-            // Get url for mailchimp
-            var url = this.action.replace('/post?', '/post-json?');
+//             // Check for spam
+//             if(document.getElementById('js-validate-robot').value !== '') { return false }
 
-            // Add form data to object
-            var data = '';
-            var inputs = this.querySelectorAll('#js-form-inputs input');
-            for (var i = 0; i < inputs.length; i++) {
-                data += '&' + inputs[i].name + '=' + encodeURIComponent(inputs[i].value);
-            }
+//             // Get url for mailchimp
+//             var url = this.action.replace('/post?', '/post-json?');
 
-            // Create & add post script to the DOM
-            var script = document.createElement('script');
-            script.src = url + data;
-            document.body.appendChild(script);
+//             // Add form data to object
+//             var data = '';
+//             var inputs = this.querySelectorAll('#js-form-inputs input');
+//             for (var i = 0; i < inputs.length; i++) {
+//                 data += '&' + inputs[i].name + '=' + encodeURIComponent(inputs[i].value);
+//             }
 
-            // Callback function
-            var callback = 'callback';
-            window[callback] = function(data) {
+//             // Create & add post script to the DOM
+//             var script = document.createElement('script');
+//             script.src = url + data;
+//             document.body.appendChild(script);
 
-                // Remove post script from the DOM
-                delete window[callback];
-                document.body.removeChild(script);
+//             // Callback function
+//             var callback = 'callback';
+//             window[callback] = function(data) {
 
-                // Display response message
-                document.getElementById('js-subscribe-response').innerHTML = data.msg
-            };
-        });
-    }
-})();
+//                 // Remove post script from the DOM
+//                 delete window[callback];
+//                 document.body.removeChild(script);
+
+//                 // Display response message
+//                 document.getElementById('js-subscribe-response').innerHTML = data.msg
+//             };
+//         });
+//     }
+// })();
